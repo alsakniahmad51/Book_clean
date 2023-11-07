@@ -1,9 +1,15 @@
 class BookEntity {
-  final String image;
+  final String bookId;
+  final String? image;
   final String title;
-  final String authername;
-  final num price;
-  final num raiting;
+  final String? authername;
+  final num? price;
+  final num? raiting;
 
-  BookEntity(this.image, this.title, this.authername, this.price, this.raiting);
+  BookEntity(this.bookId,
+      {required this.image,
+      required this.title,
+      required this.authername,
+      required this.price,
+      required this.raiting});
 }
